@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "DonutScript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.donutscript",
+				"match": "\\b(class|fun|if|while|for|return|end)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.donutscript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.donutscript",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.donut"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "vsdonutscript",
+  "displayName": "vsdonutscript",
+  "description": "DonutScript support for VSCode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "donutscript",
+      "aliases": ["DonutScript", "donutscript"],
+      "extensions": [".donut",".dns"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "donutscript",
+      "scopeName": "source.donut",
+      "path": "./syntaxes/donutscript.tmLanguage.json"
+    }]
+  }
+}

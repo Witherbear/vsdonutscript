@@ -1,0 +1,7 @@
+require donut
+
+class Main:
+    fun main(args):
+        println("Hello DonutScript!")
+    end
+end
